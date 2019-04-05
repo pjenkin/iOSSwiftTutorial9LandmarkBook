@@ -14,6 +14,12 @@
 		944FA2122257C5CF00A068E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944FA2102257C5CF00A068E8 /* LaunchScreen.storyboard */; };
 		944FA21D2257C5CF00A068E8 /* Landmark_image_bookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FA21C2257C5CF00A068E8 /* Landmark_image_bookTests.swift */; };
 		944FA2282257C5D000A068E8 /* Landmark_image_bookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FA2272257C5D000A068E8 /* Landmark_image_bookUITests.swift */; };
+		944FA2392257C81B00A068E8 /* angkor-wat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 944FA2352257C81B00A068E8 /* angkor-wat.jpeg */; };
+		944FA23A2257C81B00A068E8 /* eiffel-tower.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 944FA2362257C81B00A068E8 /* eiffel-tower.jpeg */; };
+		944FA23B2257C81B00A068E8 /* pyramids.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 944FA2372257C81B00A068E8 /* pyramids.jpeg */; };
+		944FA23C2257C81B00A068E8 /* taj-mahal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 944FA2382257C81B00A068E8 /* taj-mahal.jpeg */; };
+		944FA23F2257C86B00A068E8 /* great-wall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 944FA23D2257C86B00A068E8 /* great-wall.jpeg */; };
+		944FA2402257C86B00A068E8 /* macchu-picchu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 944FA23E2257C86B00A068E8 /* macchu-picchu.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		944FA2232257C5D000A068E8 /* Landmark image bookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Landmark image bookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		944FA2272257C5D000A068E8 /* Landmark_image_bookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark_image_bookUITests.swift; sourceTree = "<group>"; };
 		944FA2292257C5D000A068E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		944FA2352257C81B00A068E8 /* angkor-wat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "angkor-wat.jpeg"; sourceTree = "<group>"; };
+		944FA2362257C81B00A068E8 /* eiffel-tower.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eiffel-tower.jpeg"; sourceTree = "<group>"; };
+		944FA2372257C81B00A068E8 /* pyramids.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pyramids.jpeg; sourceTree = "<group>"; };
+		944FA2382257C81B00A068E8 /* taj-mahal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "taj-mahal.jpeg"; sourceTree = "<group>"; };
+		944FA23D2257C86B00A068E8 /* great-wall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "great-wall.jpeg"; sourceTree = "<group>"; };
+		944FA23E2257C86B00A068E8 /* macchu-picchu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "macchu-picchu.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,12 @@
 		944FA2062257C5CF00A068E8 /* Landmark image book */ = {
 			isa = PBXGroup;
 			children = (
+				944FA23D2257C86B00A068E8 /* great-wall.jpeg */,
+				944FA23E2257C86B00A068E8 /* macchu-picchu.jpeg */,
+				944FA2352257C81B00A068E8 /* angkor-wat.jpeg */,
+				944FA2362257C81B00A068E8 /* eiffel-tower.jpeg */,
+				944FA2372257C81B00A068E8 /* pyramids.jpeg */,
+				944FA2382257C81B00A068E8 /* taj-mahal.jpeg */,
 				944FA2072257C5CF00A068E8 /* AppDelegate.swift */,
 				944FA2092257C5CF00A068E8 /* ViewController.swift */,
 				944FA20B2257C5CF00A068E8 /* Main.storyboard */,
@@ -232,8 +250,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944FA23A2257C81B00A068E8 /* eiffel-tower.jpeg in Resources */,
 				944FA2122257C5CF00A068E8 /* LaunchScreen.storyboard in Resources */,
 				944FA20F2257C5CF00A068E8 /* Assets.xcassets in Resources */,
+				944FA23F2257C86B00A068E8 /* great-wall.jpeg in Resources */,
+				944FA2392257C81B00A068E8 /* angkor-wat.jpeg in Resources */,
+				944FA23B2257C81B00A068E8 /* pyramids.jpeg in Resources */,
+				944FA2402257C86B00A068E8 /* macchu-picchu.jpeg in Resources */,
+				944FA23C2257C81B00A068E8 /* taj-mahal.jpeg in Resources */,
 				944FA20D2257C5CF00A068E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
