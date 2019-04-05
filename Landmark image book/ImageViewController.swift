@@ -13,8 +13,16 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
+    var selectedLandmarkName = ""
+    var selectedLandmarkImage = UIImage()
+    // 2 variables corresponding with similar variables in other ViewController
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = selectedLandmarkName
+        imageView.image = selectedLandmarkImage
 
         // Do any additional setup after loading the view.
     }

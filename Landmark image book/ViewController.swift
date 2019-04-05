@@ -14,6 +14,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var landmarkNamesArray = [String]()
     var landmarkImagesArray = [UIImage]()
     
+    var chosenLandmarkName = ""
+    var chosenLandmarkImage = UIImage()
+    
+    // 2 variables corresponding with similar variables in other ViewController
+    
     
     
     // NB manually subclass/inherit ViewController also from UITableViewDelegate, UITableViewDataSource
@@ -70,6 +75,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             landmarkNamesArray.remove(at: indexPath.row)
             landmarkImagesArray.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+        }
+    }
+    
+    // add yet another delegate, to pass over data of selection in segue to other ViewController
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.chosenLandmarkName = landmarkNamesArray[indexPath.row] // get selected row data, ready to pass
+        self.chosenLandmarkImage = landmarkImagesArray[indexPath.row] // get selected row data, ready to pass
+        performSegue(withIdentifier: "toImageVCSegue", sender: nil)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toImageVCSegue"
+        {
+            let destinationVC = segue.destination as! ImageViewController
+            destinationVC.selectedLandmarkName = chosenLandmarkName     // accessible now - pass over data
+            destinationVC.selectedLandmarkImage = chosenLandmarkImage     // accessible now - pass over datafrom 1st to 2nd
         }
     }
 
